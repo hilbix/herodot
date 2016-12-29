@@ -1,0 +1,8 @@
+pure-text append-only no-sql key-to-multiple-values database
+
+This code here allows to store multiple values per key into a pure-text indexed database which also is append-only.
+
+It is meant for embedding into other tools while concurrent database read-write access.  There are not transactions, as all data which is appended cannot be undone.
+
+The append-only nature means, it is like a CoW-database, as any point in time can be recovered.
+
